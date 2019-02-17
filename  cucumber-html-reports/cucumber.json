@@ -1,0 +1,298 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Search for compensation",
+        "description": "",
+        "id": "reddit;search-for-compensation;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16772300086,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "that I am on the \"http://www.reddit.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.reddit.com",
+                  "offset": 18
+                }
+              ],
+              "location": "SearchTest.that_I_am_on_the_www_reddit_com(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1230527598,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on search field and type \"compensation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "compensation",
+                  "offset": 34
+                }
+              ],
+              "location": "SearchTest.i_click_on_search_field_and_type_searchString(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3575413674,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I hit Enter Key",
+            "match": {
+              "location": "SearchTest.i_hit_Enter_Key()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8698292,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a page with summary will be viewed",
+            "match": {
+              "location": "SearchTest.a_page_with_summary_will_be_viewed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "View reddit",
+        "description": "",
+        "id": "reddit;view-reddit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18967017,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I have searched for Compensation reddits",
+            "match": {
+              "location": "ViewRedditTest.i_have_searched_for_Compensation_reddits()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 958014282,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on first rows",
+            "match": {
+              "location": "ViewRedditTest.i_click_on_first_rows()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4554792783,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "new page with Reddit will be displayed",
+            "match": {
+              "location": "ViewRedditTest.new_page_with_Reddit_will_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5676595382,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "top most top tile will be printed on screen",
+            "match": {
+              "location": "ViewRedditTest.top_most_top_tile_will_be_printed_on_screen()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "login",
+        "description": "",
+        "id": "reddit;login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2838215196,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am on the BasePage",
+            "match": {
+              "location": "LoginTest.i_am_on_the_BasePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 899397284,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter u \"le_tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "le_tester",
+                  "offset": 11
+                }
+              ],
+              "location": "LoginTest.i_enter_user(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 344387058,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter p \"MEfHU8LstpUj3FJ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MEfHU8LstpUj3FJ",
+                  "offset": 11
+                }
+              ],
+              "location": "LoginTest.i_enter_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30503860181,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginTest.i_click_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87101,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I am logging",
+            "match": {
+              "location": "LoginTest.i_am_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "DownVote",
+        "description": "",
+        "id": "reddit;downvote",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 39487119,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I am logged in",
+            "match": {
+              "location": "VoteTest.i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 480567,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Reddit was not yet downvoted",
+            "match": {
+              "location": "VoteTest.reddit_was_not_yet_downvoted()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1052503587,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Click Downvote",
+            "match": {
+              "location": "VoteTest.click_Downvote()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "reddit",
+    "description": "",
+    "id": "reddit",
+    "keyword": "Feature",
+    "uri": "src/test/resources/reddit1",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@run"
+      }
+    ]
+  }
+]

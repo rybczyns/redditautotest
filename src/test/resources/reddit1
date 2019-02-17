@@ -1,0 +1,34 @@
+@run
+Feature: reddit
+
+  Scenario Outline: Search for compensation
+    Given that I am on the "<url>"
+    When I click on search field and type "<searchString>"
+    And I hit Enter Key
+    Then a page with summary will be viewed
+    Examples:
+     |url | searchString |
+     | http://www.reddit.com | compensation |
+
+  Scenario: View reddit
+    Given I have searched for Compensation reddits
+    When I click on first rows
+    Then new page with Reddit will be displayed
+    And top most top tile will be printed on screen
+
+  Scenario Outline: login
+    Given I am on the BasePage
+    When I enter u "<username>"
+    And I enter p "<password>"
+    And I click on Login button
+    Then I am logging
+    Examples:
+      | username | password |
+      | le_tester   | MEfHU8LstpUj3FJ |
+
+  Scenario: DownVote
+    Given I am logged in
+    When Reddit was not yet downvoted
+    Then Click Downvote
+
+
